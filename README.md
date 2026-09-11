@@ -1,4 +1,4 @@
-# Dossier de Création — Comptarapide
+# Création d'entreprise avec Abdou — Comptarapide
 
 Formulaire client + espace administrateur, en HTML/CSS/JS pur.
 Aucun build, aucun `npm install`. Hébergement GitHub Pages, base Supabase.
