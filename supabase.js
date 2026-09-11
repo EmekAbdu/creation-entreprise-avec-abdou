@@ -53,7 +53,10 @@
   function uploadPhoto(path, blob, contentType) {
     return fetch(URL_ + "/storage/v1/object/dossiers/" + path, {
       method: "POST",
-      headers: headers(null, { "Content-Type": contentType || "image/jpeg", "x-upsert": "true" }),
+      // Pas de x-upsert : écraser exigerait un droit UPDATE que le rôle
+      // anonyme n'a pas. Chaque dossier ayant son propre identifiant,
+      // aucune collision n'est possible.
+      headers: headers(null, { "Content-Type": contentType || "image/jpeg" }),
       body: blob
     }).then(function (res) {
       return res.text().then(function (txt) { if (!res.ok) throw fail(res, txt); return true; });
