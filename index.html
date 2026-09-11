@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#FBF8F7">
+<title>Dossier de Création — Comptarapide</title>
+<link rel="icon" href="logo-light.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-in">
+    <img class="logo logo-light" src="logo-light.png" alt="Comptarapide">
+    <img class="logo logo-dark" src="logo-dark.png" alt="Comptarapide">
+    <div class="topbar-spacer"></div>
+    <div class="langsw" role="group" aria-label="Langue">
+      <button type="button" id="lang-fr" aria-pressed="true">FR</button>
+      <button type="button" id="lang-tr" aria-pressed="false">TR</button>
+    </div>
+  </div>
+  <div class="progressbar"><i id="pbar"></i></div>
+</div>
+
+<div class="wrap">
+  <nav class="rail" id="rail" aria-label="Étapes"></nav>
+  <main>
+    <div class="mobstep" id="mobstep"></div>
+    <div id="panels"></div>
+  </main>
+</div>
+
+<div class="navbar">
+  <div class="navbar-in">
+    <button class="btn sec" id="btn-prev" type="button">←</button>
+    <div class="navstat" id="navstat"></div>
+    <button class="btn prim" id="btn-next" type="button">Suivant</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="config.js"></script>
+<script src="supabase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="form.js"></script>
+</body>
+</html>
