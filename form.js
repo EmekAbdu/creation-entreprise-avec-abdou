@@ -671,12 +671,12 @@ function panelConditions(host){
   var terms = el("div","terms");
   var TT = LANG==="fr" ? [
     ["Les documents demandés dans ce questionnaire sont nécessaires au <b>dépôt de capital</b>. Sans eux, la banque ne délivre pas l’attestation."],
-    ["Le <b>solde du paiement</b> est dû au moment de l’envoi de l’attestation de dépôt de capital. <b>Sans ces paiements, aucune formalité n’est déposée.</b>"],
+    ["Le <b>solde du paiement</b> est dû au moment où vous m’envoyez votre attestation de dépôt de capital reçue de votre banque. <b>Sans ces paiements, aucune formalité n’est déposée.</b>"],
     ["Les frais d’<b>annonce légale</b> et les frais d’<b>INPI</b> sont des frais officiels versés à des tiers. Ils ne sont ni des honoraires, ni remboursables une fois engagés."],
     ["Si vous n’acceptez pas ces conditions, <b>aucun travail ne sera commencé</b>. Ce n’est pas négociable."]
   ] : [
     ["Bu formda istenen belgeler <b>sermaye yatırımı</b> için gereklidir. Bunlar olmadan banka belgeyi düzenlemez."],
-    ["<b>Ödeme bakiyesi</b>, sermaye yatırım belgesinin gönderildiği anda muaccel olur. <b>Bu ödemeler yapılmadan hiçbir işlem yapılmaz.</b>"],
+    ["<b>Ödeme bakiyesi</b>, bankanızdan aldığınız sermaye yatırım belgesini bana gönderdiğiniz anda muaccel olur. <b>Bu ödemeler yapılmadan hiçbir işlem yapılmaz.</b>"],
     ["<b>Resmî ilan</b> ve <b>INPI</b> masrafları üçüncü kişilere ödenen resmî masraflardır. Ne ücrettir ne de yapıldıktan sonra iade edilir."],
     ["Bu koşulları kabul etmezseniz <b>hiçbir çalışma başlatılmaz</b>. Bu pazarlığa açık değildir."]
   ];
@@ -917,8 +917,8 @@ var OFFERS = {
        t:{fr:"<b>À la commande.</b> C’est ce versement qui déclenche mon travail : je ne rédige rien avant de l’avoir reçu. Il couvre la rédaction de vos statuts et, si vous le demandez, le prévisionnel pour la banque. Vous pouvez verser davantage, cela réduit d’autant le solde.",
            tr:"<b>Sipariş anında.</b> İşimi başlatan ödeme budur: bu ödemeyi almadan hiçbir şey yazmam. Ana sözleşmenizin hazırlanmasını ve talep ederseniz banka öngörü tablosunu kapsar. Daha fazla ödeyebilirsiniz; bakiye o kadar azalır."}},
       {n:{fr:"Le solde, soit 350 €",tr:"Bakiye, yani 350 €"},
-       t:{fr:"<b>Au moment où je vous envoie l’attestation de dépôt de capital.</b> Tant que ce solde n’est pas réglé, je ne publie pas l’annonce légale et je ne dépose rien à l’INPI. Le dossier reste prêt, mais il ne part pas.",
-           tr:"<b>Size sermaye yatırım belgesini gönderdiğim anda.</b> Bu bakiye ödenmediği sürece resmî ilanı yayımlamam ve INPI’ye hiçbir şey sunmam. Dosya hazır bekler ama gönderilmez."}}
+       t:{fr:"<b>Au moment où vous m’enverrez votre attestation de dépôt de capital reçue de votre banque.</b> Tant que ce solde n’est pas réglé, je ne publie pas l’annonce légale et je ne dépose rien à l’INPI. Le dossier reste prêt, mais il ne part pas.",
+           tr:"<b>Bankanızdan aldığınız sermaye yatırım belgesini bana gönderdiğiniz anda.</b> Bu bakiye ödenmediği sürece resmî ilanı yayımlamam ve INPI’ye hiçbir şey sunmam. Dosya hazır bekler ama gönderilmez."}}
     ],
     warn:{fr:"<b>En plus des 500 € d’honoraires :</b> l’annonce légale et les frais d’INPI restent à votre charge et se paient avec <b>votre</b> carte bancaire, au moment où ils sont dus. Ce ne sont pas mes honoraires — cet argent va au journal d’annonces légales et à l’INPI.",
           tr:"<b>500 € ücrete ek olarak:</b> resmî ilan ve INPI masrafları size aittir ve vadesi geldiğinde <b>sizin</b> kredi kartınızla ödenir. Bunlar benim ücretim değildir — bu para resmî ilan gazetesine ve INPI’ye gider."}
